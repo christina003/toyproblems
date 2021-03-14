@@ -9,15 +9,22 @@ class LinkedList {
 }
 
 function reverseLinkedList(head) {
+  //set var to track curr node
   let curr = head;
+  //set var to track previous
   let previous = null;
 
+  //while there is a curr
   while (curr) {
+    //create var to store next
     let next = curr.next;
+    //assign next to the previous
     curr.next = previous;
+    //set previous to curr
     previous = curr;
+    //set curr to temp var next
     curr = next;
   }
-
+  //return previous as it will be holding new head
   return previous;
 }
