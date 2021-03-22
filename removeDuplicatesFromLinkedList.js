@@ -7,6 +7,7 @@ class LinkedList {
   }
 }
 
+//review
 function removeDuplicatesFromLinkedList(linkedList) {
   currentNode = linkedList;
 
