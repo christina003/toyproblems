@@ -4,6 +4,7 @@ in order: left, parent, right
 preorder: root, left, right
 post order: left, right, root*/
 
+//in order
 function inOrderTraverse(tree, array) {
   if (tree !== null) {
     inOrderTraverse(tree.left, array);
@@ -13,6 +14,7 @@ function inOrderTraverse(tree, array) {
   return array;
 }
 
+//pre order
 function preOrderTraverse(tree, array) {
   if (tree !== null) {
     array.push(tree.value);
@@ -22,6 +24,7 @@ function preOrderTraverse(tree, array) {
   return array;
 }
 
+//post order
 function postOrderTraverse(tree, array) {
   if (tree !== null) {
     postOrderTraverse(tree.left, array);
