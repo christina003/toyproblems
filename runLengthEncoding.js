@@ -11,7 +11,6 @@ function runLengthEncoding(string) {
 
     if (curr === next && count < 9) {
       count++;
-      continue;
     } else {
       result += count + curr;
       count = 1;
