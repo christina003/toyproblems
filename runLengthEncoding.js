@@ -25,5 +25,5 @@ function runLengthEncoding(string) {
   //reset count
   return result;
 
-  //return result
+  //return
 }
