@@ -4,8 +4,6 @@ function smallestDifference(arrayOne, arrayTwo) {
   //declare results
   arrayOne.sort((a, b) => b - a);
   arrayTwo.sort((a, b) => a - b);
-  console.log(arrayOne);
-  console.log(arrayTwo);
 
   let smallestDiff = null;
   let results = [];
