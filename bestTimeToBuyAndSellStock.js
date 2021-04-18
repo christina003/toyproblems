@@ -12,7 +12,6 @@ var maxProfit = function (prices) {
       let difference = prices[j] - prices[i];
       if (prices[i] < prices[j] && difference > highestProfit) {
         highestProfit = difference;
-        console.log(prices[i], prices[j], difference);
       }
     }
   }
