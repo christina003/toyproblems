@@ -15,6 +15,5 @@ function arrayOfProducts(array) {
 
     result[i] = product;
   }
-
   return result;
 }
