@@ -9,19 +9,21 @@ function validStartingCity(distances, fuel, mpg) {
 function isValid(distances, fuel, mpg, currCity) {
   let counter = 0;
   let travelMiles = 0;
-  while (counter <= distances.length) {
+
+  while (counter < distances.length - 1) {
     travelMiles += fuel[currCity] * mpg;
+
     if (
       travelMiles >= distances[currCity] &&
       currCity === distances.length - 1
     ) {
+      travelMiles -= distances[currCity];
       currCity = 0;
       counter++;
-      travelMiles -= distances[currCity];
     } else if (travelMiles >= distances[currCity]) {
+      travelMiles -= distances[currCity];
       currCity++;
       counter++;
-      travelMiles -= distances[currCity];
     } else {
       return false;
     }
